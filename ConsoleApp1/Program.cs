@@ -16,19 +16,30 @@ namespace TextAdventure
 
             Console.WriteLine("Hello, " + name);
 
-            Console.WriteLine("Can you hear me?");
-            string answer = Console.ReadLine();
-            {
-                if (answer == "Yes")
-                    Console.WriteLine("Good, we can get started.");
-                
-                else if (answer == "No")
-                    Console.WriteLine("Then how did you hear me, to answer?");
 
-                else
-                    Console.ReadLine();
+            {
+                bool wrongInput = true;
+                while (wrongInput)
+                {
+                    Console.WriteLine("Can you hear me?");
+                    string answer = Console.ReadLine();
+                    if (answer == "Yes")
+                    {
+                        Console.WriteLine("Good, we can get started.");
+                        Console.WriteLine();
+                        wrongInput = false;
+                    }
+
+                    else if (answer == "No")
+                    {
+                        Console.WriteLine("Then how did you hear me, to answer?");
+                        Console.WriteLine();
+                    }
+
+                }
             }
-               {
+            {
+
                 Console.WriteLine("You've been in a coma for a year, " + name);
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
@@ -69,12 +80,23 @@ namespace TextAdventure
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                
+
+                Console.WriteLine(">The doctor walks in and looks at you, you sit up in the bed and watch what he's doing<");
+                Console.WriteLine("(Press enter to continue)");
+                Console.ReadLine();
+
+                Console.WriteLine("You have sustained major head trauma from the accident I told you about...");
+                Console.WriteLine("You barely survived. We had to operate on you for a full week.");
+                Console.WriteLine(">You then hear people banging on the door<");
+                Console.WriteLine("Oh no! There are people here for your head! >you suddenly feel an overwhelming sense of tiredness; you nod off<");
+                Console.WriteLine("(Press enter to continue)");
+                Console.ReadLine();
+
+                Console.WriteLine(name + ",can you hear me?  Wake up!");
+                Console.WriteLine(">You wake up, not knowing where you are or even who the person who woke you up is");
 
 
-               }
-
-            
+            }
             Console.ReadLine();
             Console.ReadLine();
             Console.ReadLine();
