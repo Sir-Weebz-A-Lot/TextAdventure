@@ -16,17 +16,27 @@ namespace TextAdventure
 
             Console.WriteLine("Hello, " + name);
 
-            Console.WriteLine("Can you hear me?");
-            string answer = Console.ReadLine();
-            {
-                if (answer == "Yes")
-                    Console.WriteLine("Good, we can get started.");
-                
-                else if (answer == "No")
-                    Console.WriteLine("Then how did you hear me, to answer?");
+            bool wrongInput = true;
 
-                else
-                    Console.ReadLine();
+            while (wrongInput)
+            {
+                Console.WriteLine("Can you hear me?");
+                string answer = Console.ReadLine();
+                {
+                    if (answer == "Yes")
+                    {
+                        Console.WriteLine("Good, we can get started.");
+                        Console.WriteLine();
+                        wrongInput = false;
+                    }
+
+                    else if (answer == "No")
+                    {
+                        Console.WriteLine("Then how did you hear me, to answer?");
+                        Console.WriteLine();
+                    }
+
+                }
             }
                {
                 Console.WriteLine("You've been in a coma for a year, " + name);
