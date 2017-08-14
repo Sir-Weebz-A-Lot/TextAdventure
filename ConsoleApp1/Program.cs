@@ -16,6 +16,7 @@ namespace TextAdventure
 
             Console.WriteLine("Hello, " + name);
 
+
             {
                 bool wrongInput = true;
                 while (wrongInput)
@@ -38,6 +39,7 @@ namespace TextAdventure
                 }
             }
             {
+
                 Console.WriteLine("You've been in a coma for a year, " + name);
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
@@ -78,6 +80,7 @@ namespace TextAdventure
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
+
                 Console.WriteLine(">The doctor walks in and looks at you, you sit up in the bed and watch what he's doing<");
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
@@ -94,8 +97,6 @@ namespace TextAdventure
 
 
             }
-
-
             Console.ReadLine();
             Console.ReadLine();
             Console.ReadLine();
