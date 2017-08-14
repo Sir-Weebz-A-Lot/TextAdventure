@@ -16,20 +16,20 @@ namespace TextAdventure
 
             Console.WriteLine("Hello, " + name);
 
-            Console.WriteLine("How are you today?");
+            Console.WriteLine("Can you hear me?");
             string answer = Console.ReadLine();
             {
-                if (answer == "Good")
-                    Console.WriteLine("That's nice.");
-
-                else if (answer == "Bad")
-                    Console.WriteLine("That's too bad.");
+                if (answer == "Yes")
+                    Console.WriteLine("Good, we can get started.");
+                
+                else if (answer == "No")
+                    Console.WriteLine("Then how did you hear me, to answer?");
 
                 else
                     Console.ReadLine();
             }
                {
-                Console.WriteLine("You've been in a coma for nine years, " + name);
+                Console.WriteLine("You've been in a coma for a year, " + name);
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
@@ -37,15 +37,15 @@ namespace TextAdventure
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                Console.WriteLine("*You feel a slight tingle in your left arm as the doctor speaks*");
+                Console.WriteLine(">You're overwhelmed with pain<");
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                Console.WriteLine("You were in a horrible accident.  We'll need to test how you walk and such.");
+                Console.WriteLine("You were in a horrible accident, we'll need to test how you walk and such");
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                Console.WriteLine("*the doctor helps you out of the bed and up to your feet; you feel nauseous and dizzy*");
+                Console.WriteLine(">the doctor helps you out of the bed and up to your feet; you feel nauseous and dizzy<");
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
@@ -53,11 +53,24 @@ namespace TextAdventure
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                Console.WriteLine("You should be fine after all of this time.  *you stand up and use the bed as a crutch as you try to walk towards the door*");
+                Console.WriteLine("You should be fine after all of this time.  >you stand up and use the bed as a crutch as you try to walk towards the door<");
+                Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
 
-                Console.WriteLine(".....");
+                Console.WriteLine(">You suddenly pass out, hitting the floor with your head<");
+                Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
+
+                Console.WriteLine(">You wake up in a the hospital bed once again, this time much sooner than before, a nurse is checking up on you and you try to get her attention<");
+                Console.WriteLine("(Press enter to continue)");
+                Console.ReadLine();
+
+                Console.WriteLine(">The nurse went off to get the doctor, five minutes later he arrives<");
+                Console.WriteLine("(Press enter to continue)");
+                Console.ReadLine();
+
+                
+
 
                }
 
