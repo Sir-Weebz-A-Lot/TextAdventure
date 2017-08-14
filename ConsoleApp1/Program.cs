@@ -13,9 +13,9 @@ namespace TextAdventure
             Console.WriteLine("What's your Name?");
             string name;
             name = Console.ReadLine();
-
+            Console.WriteLine();
             Console.WriteLine("Hello, " + name);
-
+            Console.WriteLine();
 
             {
                 bool wrongInput = true;
@@ -23,6 +23,7 @@ namespace TextAdventure
                 {
                     Console.WriteLine("Can you hear me?");
                     string answer = Console.ReadLine();
+                    Console.WriteLine();
                     if (answer == "Yes")
                     {
                         Console.WriteLine("Good, we can get started.");
@@ -32,8 +33,10 @@ namespace TextAdventure
 
                     else if (answer == "No")
                     {
-                        Console.WriteLine("Then how did you hear me, to answer?");
-                        Console.WriteLine();
+                        Console.WriteLine(">You slept another 7 years<");
+                        Console.WriteLine("(Press enter to quit)");
+                        Console.ReadLine();
+                        Environment.Exit(0);
                     }
 
                 }
