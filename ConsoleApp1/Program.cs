@@ -32,7 +32,7 @@ namespace TextAdventure
 
                     else if (answer == "No")
                     {
-                        Console.WriteLine("Then how did you hear me, to answer?");
+                        Console.WriteLine(">You slept another 7 years<");
                         Console.WriteLine();
                     }
 
