@@ -97,14 +97,51 @@ namespace TextAdventure
 
                 Console.WriteLine(name + ",can you hear me?  Wake up!");
                 Console.WriteLine(">You wake up, not knowing where you are or even who the person who woke you up is");
+                Console.WriteLine("(You have four choices to ask the person: 1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
+
+                {
+                    bool wrongInput = true;
+                    while (wrongInput)
+                    {
+                        Console.WriteLine();
+                        string answer = Console.ReadLine();
+                        if (answer == "1")
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("We're... trapped inside of a slaughterhouse..");
+                        }
+
+                        else if (answer == "2")
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I don't think that's important right now");
+                        }
+
+                        else if (answer == "3")
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I'm not sure...");
+                        }
+
+                        else if (answer == "4")
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("...");
+                            break;
+                        }
+
+                        else
+                            Console.WriteLine("...");
+                    }
+
+                }
+                Console.ReadLine();
+                Console.ReadLine();
+                Console.ReadLine();
 
 
             }
-            Console.ReadLine();
-            Console.ReadLine();
-            Console.ReadLine();
-
-
         }
     }
 }
+
