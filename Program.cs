@@ -19,14 +19,20 @@ namespace TextAdventure
             Console.WriteLine("Can you hear me?");
             string answer = Console.ReadLine();
             {
-                if (answer == "Yes")
-                    Console.WriteLine("Good, we can get started.");
-                
-                else if (answer == "No")
-                    Console.WriteLine("Then how did you hear me, to answer?");
+                while (true)
+                {
+                    if (answer == "Yes")
+                    {
+                        Console.WriteLine("Good, we can get started.");
+                        break;
+                    }
 
-                else
-                    Console.ReadLine();
+                    else if (answer == "No")
+                        Console.WriteLine("Then how did you hear me, to answer?");
+
+                    else
+                        Console.ReadLine();
+                }
             }
                {
                 Console.WriteLine("You've been in a coma for a year, " + name);
