@@ -13,9 +13,9 @@ namespace TextAdventure
             Console.WriteLine("What's your Name?");
             string name;
             name = Console.ReadLine();
-
+            Console.WriteLine();
             Console.WriteLine("Hello, " + name);
-
+            Console.WriteLine();
 
             {
                 bool wrongInput = true;
@@ -23,6 +23,7 @@ namespace TextAdventure
                 {
                     Console.WriteLine("Can you hear me?");
                     string answer = Console.ReadLine();
+                    Console.WriteLine();
                     if (answer == "Yes")
                     {
                         Console.WriteLine("Good, we can get started.");
@@ -32,8 +33,10 @@ namespace TextAdventure
 
                     else if (answer == "No")
                     {
-                        Console.WriteLine("Then how did you hear me, to answer?");
-                        Console.WriteLine();
+                        Console.WriteLine(">You slept another 7 years<");
+                        Console.WriteLine("(Press enter to quit)");
+                        Console.ReadLine();
+                        Environment.Exit(0);
                     }
 
                 }
@@ -94,27 +97,7 @@ namespace TextAdventure
 
                 Console.WriteLine(name + ",can you hear me?  Wake up!");
                 Console.WriteLine(">You wake up, not knowing where you are or even who the person who woke you up is");
-                Console.WriteLine("(You have four choices to ask the person: 1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) '...'");
 
-                {
-                    string answer = Console.ReadLine();
-                    if (answer == "Where are we?")
-                        Console.WriteLine("We're... trapped inside of a slaughterhouse..");
-
-                    else if (answer == "Who are you?")
-                        Console.WriteLine("I don't think that's important right now");
-
-                    else if (answer == "What happened?")
-                        Console.WriteLine("I'm not sure...");
-
-                    else if (answer == "...")
-                        Console.WriteLine("...");
-
-                    else
-                        Console.WriteLine("...");                
-                            
-                            
-                }
 
             }
             Console.ReadLine();
