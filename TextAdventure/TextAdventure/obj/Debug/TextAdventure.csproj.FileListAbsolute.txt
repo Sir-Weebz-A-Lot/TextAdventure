@@ -1,0 +1,6 @@
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\obj\Debug\TextAdventure.csprojResolveAssemblyReference.cache
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\bin\Debug\TextAdventure.exe.config
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\bin\Debug\TextAdventure.exe
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\bin\Debug\TextAdventure.pdb
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\obj\Debug\TextAdventure.exe
+c:\users\waylon\documents\visual studio 2017\Projects\TextAdventure\TextAdventure\obj\Debug\TextAdventure.pdb
