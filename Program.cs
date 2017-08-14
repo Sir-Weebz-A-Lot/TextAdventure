@@ -80,8 +80,8 @@ namespace TextAdventure
                 Console.ReadLine();
 
                 Console.WriteLine("You have sustained major head trauma from the accident I told you about...");
-                Console.WriteLine("You barely survived. We had to operate on your for a full week.");
-                Console.WriteLine(">you then hear people banging on the door<");
+                Console.WriteLine("You barely survived. We had to operate on you for a full week.");
+                Console.WriteLine(">You then hear people banging on the door<");
                 Console.WriteLine("Oh no! There are people here for your head! >you suddenly feel an overwhelming sense of tiredness; you nod off<");
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
