@@ -26,11 +26,15 @@ namespace TextAdventure
                     if (answer == "Yes")
                     {
                         Console.WriteLine("Good, we can get started.");
+                        Console.WriteLine();
                         wrongInput = false;
                     }
 
                     else if (answer == "No")
+                    {
                         Console.WriteLine("Then how did you hear me, to answer?");
+                        Console.WriteLine();
+                    }
 
                 }
             }
