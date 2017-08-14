@@ -34,7 +34,9 @@ namespace TextAdventure
                     else if (answer == "No")
                     {
                         Console.WriteLine(">You slept another 7 years<");
-                        Console.WriteLine();
+                        Console.WriteLine("(Press enter to quit)");
+                        Console.ReadLine();
+                        Environment.Exit(0);
                     }
 
                 }
