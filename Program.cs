@@ -10,7 +10,7 @@ namespace TextAdventure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's your name?");
+            Console.WriteLine("What's your Name?");
             string name;
             name = Console.ReadLine();
 
@@ -20,10 +20,10 @@ namespace TextAdventure
             string answer = Console.ReadLine();
             {
                 if (answer == "Good")
-                    Console.WriteLine("I don't care.");
+                    Console.WriteLine("That's nice.");
 
                 else if (answer == "Bad")
-                    Console.WriteLine("I don't care.");
+                    Console.WriteLine("That's too bad.");
 
                 else
                     Console.ReadLine();
