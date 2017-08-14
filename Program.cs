@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,7 @@ namespace TextAdventure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's your Name?");
+            Console.WriteLine("What's your name?");
             string name;
             name = Console.ReadLine();
 
@@ -20,15 +20,15 @@ namespace TextAdventure
             string answer = Console.ReadLine();
             {
                 if (answer == "Good")
-                    Console.WriteLine("That's nice.");
+                    Console.WriteLine("I don't care.");
 
                 else if (answer == "Bad")
-                    Console.WriteLine("That's too bad.");
+                    Console.WriteLine("I don't care.");
 
                 else
-                    Console.ReadLine();
+                    Console.WriteLine("Are youretarded? Answer my question.");
             }
-               {
+            {
                 Console.WriteLine("You've been in a coma for nine years, " + name);
                 Console.WriteLine("(Press enter to continue)");
                 Console.ReadLine();
@@ -54,14 +54,16 @@ namespace TextAdventure
                 Console.ReadLine();
 
                 Console.WriteLine("Y/N");
-                Console.ReadLine();
 
-                if (answer == "Y")
-                    Console.WriteLine("...");
+                string answer2 = Console.ReadLine();
+                {
+                    if (answer2 == "Y")
+                        Console.WriteLine("...");
 
-                else if (answer == "N")
-                    Console.WriteLine("...");
-               }
+                    else if (answer2 == "N")
+                        Console.WriteLine("...");
+                }
+            }
 
             
             Console.ReadLine();
