@@ -69,7 +69,8 @@ namespace TextAdventure
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine("You should be fine after all of this time.  >you stand up and use the bed as a crutch as you try to walk towards the door");
+                Console.WriteLine("You should be fine after all of this time.");
+                    Console.WriteLine(">you stand up and use the bed as a crutch as you try to walk towards the door");
                 Console.WriteLine("(press any key to continue...)");
                 Console.ReadKey();
 
@@ -93,7 +94,8 @@ namespace TextAdventure
                 Console.WriteLine("You have sustained major head trauma from the accident I told you about...");
                 Console.WriteLine("You barely survived. We had to operate on you for a full week.");
                 Console.WriteLine(">You then hear people banging on the door");
-                Console.WriteLine("Oh no! There are people here for your head! >you suddenly feel an overwhelming sense of tiredness; you nod off");
+                Console.WriteLine("Oh no! There are people here for your head!");
+                    Console.WriteLine(">you suddenly feel an overwhelming sense of tiredness; you nod off");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
@@ -103,7 +105,8 @@ namespace TextAdventure
                 {
                  
                     {
-                        Console.WriteLine("(You have four choices to ask the person: 1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
+                        Console.WriteLine("(You have four choices to ask the person:");
+                        Console.WriteLine("1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
                         if (Console.ReadKey().Key == ConsoleKey.D1)
                         {
                             Console.WriteLine();
