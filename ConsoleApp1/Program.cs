@@ -35,7 +35,7 @@ namespace TextAdventure
                     {
                         Console.WriteLine();
                         Console.WriteLine(">You slept another 7 years");
-                        Console.WriteLine("(Press enter to quit)");
+                        Console.WriteLine("(Press any key to quit...)");
                         Console.ReadKey(); // check for button press before exiting
                         Environment.Exit(0);
                         break; // just incase loop wants to repeat
