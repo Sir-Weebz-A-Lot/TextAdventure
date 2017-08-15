@@ -103,14 +103,14 @@ namespace TextAdventure
                     string answer2 = Console.ReadLine();
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
-
-
+                    {
                         Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
+                    }
 
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
-
+                    {
                         Console.WriteLine(">Your newfound friend shot them all, killing them - you can move on");
-
+                    }
                     Console.WriteLine("That was close.. they could have killed us both!");
 
 
