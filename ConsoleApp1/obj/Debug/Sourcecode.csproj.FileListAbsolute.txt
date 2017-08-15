@@ -1,11 +1,11 @@
+C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\Sourcecode.csprojResolveAssemblyReference.cache
+C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.exe
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\Sourcecode.csprojResolveAssemblyReference.cache
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\Sourcecode.csproj.CoreCompileInputs.cache
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\Coul\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
-C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\Sourcecode.csprojResolveAssemblyReference.cache
-C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-C:\Users\Osmos\Documents\GitHub\TextAdventure\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
