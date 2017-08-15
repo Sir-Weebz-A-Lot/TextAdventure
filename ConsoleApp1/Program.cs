@@ -106,9 +106,9 @@ namespace TextAdventure
 
 
 
-                Console.ReadLine();
-                Console.ReadLine();
-                Console.ReadLine();
+                Console.ReadKey();
+                Console.ReadKey();
+                Console.ReadKey();
 
             }
         }
