@@ -100,7 +100,7 @@ namespace TextAdventure
 
                     Console.WriteLine(">As you enter the next room you see three men - all of them unfriendly");
 
-                    string answer2 = Console.ReadLine();
+                    
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
 
