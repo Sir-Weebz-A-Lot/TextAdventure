@@ -10,6 +10,7 @@ namespace TextAdventure
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to (unnamed) text adventure!  We hope you enjoy it");
             Console.WriteLine("Now tell us your name");
             string name;
@@ -26,12 +27,17 @@ namespace TextAdventure
                 bool wrongInput = true;
                 while (wrongInput)
                 {
+
                     Console.WriteLine(name + ", wake up! Can you hear me?");
+
                     Console.WriteLine("1) Yes 2) No");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
+
                         Console.WriteLine("Get up, we need to go, now!");
+
+
                         Console.WriteLine();
                         wrongInput = false;
                     }
@@ -98,6 +104,7 @@ namespace TextAdventure
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
 
+
                         Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
 
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
@@ -113,6 +120,66 @@ namespace TextAdventure
                     Console.WriteLine(">You leave the firearm and rush to the door, hoping you don't need it");
                 }
 
+
+                Console.WriteLine(">The doctor walks in and looks at you, you sit up in the bed and watch what he's doing");
+                Console.WriteLine("(Press any key to continue...)");
+                Console.ReadKey();
+
+                Console.WriteLine("You have sustained major head trauma from the accident I told you about...");
+                Console.WriteLine("You barely survived. We had to operate on you for a full week.");
+                Console.WriteLine(">You then hear people banging on the door");
+                Console.WriteLine("Oh no! There are people here for your head!");
+                    Console.WriteLine(">you suddenly feel an overwhelming sense of tiredness; you nod off");
+                Console.WriteLine("(Press any key to continue...)");
+                Console.ReadKey();
+
+                Console.WriteLine(name + ",can you hear me?  Wake up!");
+                Console.WriteLine(">You wake up, not knowing where you are or even who the person who woke you up is");
+
+                {
+                 
+                    {
+                        Console.WriteLine("(You have four choices to ask the person:");
+                        Console.WriteLine("1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
+                        if (Console.ReadKey().Key == ConsoleKey.D1)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("We're... trapped inside of a slaughterhouse..");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D2)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I don't think that's important right now");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D3)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I'm not sure...");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D4)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("...");
+                            Console.WriteLine();
+                           
+                        }
+
+                        else
+                            Console.WriteLine("...");
+                        
+                    }
+                    Console.WriteLine("Press any button to exit...");
+                    Console.ReadKey(); // checks for button press
+                }
 
 
 
