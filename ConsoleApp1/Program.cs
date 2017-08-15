@@ -81,6 +81,22 @@ namespace TextAdventure
                 {
                     Console.WriteLine(">You take the firearm and rush to the door");
                     Console.WriteLine("(Press enter to continue)");
+                    Console.ReadKey();
+
+                    Console.WriteLine(">As you enter the next room you see three men - all of them unfriendly");
+                    Console.WriteLine("What do you do? Shoot or don't shoot?");
+                                        
+                    if (answer == "Shoot")
+                    {
+                        Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
+                    }
+                    else if (answer == "Don't shoot")
+                    {
+                        Console.WriteLine(">Your newfound friend shot them all, killing them - you can move on");
+                    }
+                    Console.WriteLine("That was close.. they could have killed us both!");
+
+
                 }
                 else if (answer == "leave")
                 {
@@ -89,7 +105,7 @@ namespace TextAdventure
                 
 
 
-                Console.WriteLine("We've been keeping your muscle mass over the years via therapy, " + name);
+                Console.WriteLine("");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
