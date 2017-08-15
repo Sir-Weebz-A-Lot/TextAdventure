@@ -1,2 +1,2 @@
 # TextAdventure
-gimme access
+Work-In-Progress text adventure!
