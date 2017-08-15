@@ -34,7 +34,7 @@ namespace TextAdventure
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(">You slept another 7 years<");
+                        Console.WriteLine(">You slept another 7 years");
                         Console.WriteLine("(Press enter to quit)");
                         Console.ReadKey(); // check for button press before exiting
                         Environment.Exit(0);
@@ -53,7 +53,7 @@ namespace TextAdventure
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine(">You're overwhelmed with pain<");
+                Console.WriteLine(">You're overwhelmed with pain");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
@@ -61,7 +61,7 @@ namespace TextAdventure
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine(">the doctor helps you out of the bed and up to your feet; you feel nauseous and dizzy<");
+                Console.WriteLine(">the doctor helps you out of the bed and up to your feet; you feel nauseous and dizzy");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
@@ -69,31 +69,31 @@ namespace TextAdventure
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine("You should be fine after all of this time.  >you stand up and use the bed as a crutch as you try to walk towards the door<");
+                Console.WriteLine("You should be fine after all of this time.  >you stand up and use the bed as a crutch as you try to walk towards the door");
                 Console.WriteLine("(press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine(">You suddenly pass out, hitting the floor with your head<");
+                Console.WriteLine(">You suddenly pass out, hitting the floor with your head");
                 Console.WriteLine("(press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine(">You wake up in a the hospital bed once again, this time much sooner than before, a nurse is checking up on you and you try to get her attention<");
+                Console.WriteLine(">You wake up in a the hospital bed once again, this time much sooner than before, a nurse is checking up on you and you try to get her attention");
                 Console.WriteLine("(press any key to continue...)");
                 Console.ReadKey();
 
-                Console.WriteLine(">The nurse went off to get the doctor, five minutes later he arrives<");
+                Console.WriteLine(">The nurse went off to get the doctor, five minutes later he arrives");
                 Console.WriteLine("(press any key to continue...)");
                 Console.ReadKey();
 
 
-                Console.WriteLine(">The doctor walks in and looks at you, you sit up in the bed and watch what he's doing<");
+                Console.WriteLine(">The doctor walks in and looks at you, you sit up in the bed and watch what he's doing");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
                 Console.WriteLine("You have sustained major head trauma from the accident I told you about...");
                 Console.WriteLine("You barely survived. We had to operate on you for a full week.");
-                Console.WriteLine(">You then hear people banging on the door<");
-                Console.WriteLine("Oh no! There are people here for your head! >you suddenly feel an overwhelming sense of tiredness; you nod off<");
+                Console.WriteLine(">You then hear people banging on the door");
+                Console.WriteLine("Oh no! There are people here for your head! >you suddenly feel an overwhelming sense of tiredness; you nod off");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.ReadKey();
 
