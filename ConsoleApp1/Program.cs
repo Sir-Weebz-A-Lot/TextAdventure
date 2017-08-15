@@ -19,8 +19,9 @@ namespace TextAdventure
             Console.WriteLine();
             Console.WriteLine(">Adventure start<");
             Console.WriteLine("(Press enter/space to continue)");
+            Console.WriteLine();
             Console.ReadKey();
-
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
             {
                 bool wrongInput = true;
                 while (wrongInput)
@@ -52,25 +53,36 @@ namespace TextAdventure
                 Console.WriteLine("We're under attack, they've found us");
                 Console.WriteLine("(Press enter to continue...)");
 
+                Console.WriteLine();
                 Console.ReadKey();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+
 
                 Console.WriteLine(">As you wake up you notice the room around you - it's filled with weapons, the walls are horribly damaged and you hear what sounds like gunfire coming from outside");
                 Console.WriteLine("(Press enter to continue...)");
 
+                Console.WriteLine();
                 Console.ReadKey();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                 Console.WriteLine(">You're overwhelmed with pain");
                 Console.WriteLine("(Press enter to continue...)");
 
+                Console.WriteLine();
                 Console.ReadKey();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                 Console.WriteLine("Come on, through here");
                 Console.WriteLine("(Press enter to continue...)");
+                Console.WriteLine();
                 Console.ReadKey();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                 Console.WriteLine(">You see a firearm sitting next to you");
                 Console.WriteLine("(Press enter to continue...)");
+                Console.WriteLine();
                 Console.ReadKey();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
 
 
                 string answer;
