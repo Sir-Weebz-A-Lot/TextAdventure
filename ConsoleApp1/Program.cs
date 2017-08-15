@@ -108,7 +108,7 @@ namespace TextAdventure
                         Console.WriteLine("(You have four choices to ask the person:");
                         Console.WriteLine("1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
                         bool wrongInput = true;
-                        while (wrongInput)
+                        while (wrongInput) //LOOP DO NOT REMOVE *COUL*
                         {
                             if (Console.ReadKey().Key == ConsoleKey.D1)
                             {
@@ -139,7 +139,7 @@ namespace TextAdventure
                                 Console.WriteLine();
                                 Console.WriteLine("...");
                                 Console.WriteLine();
-                                wrongInput = false;
+                                wrongInput = false; //END ZA LOOP
                             }
 
                             else
