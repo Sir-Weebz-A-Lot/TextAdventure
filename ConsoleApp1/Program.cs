@@ -141,40 +141,44 @@ namespace TextAdventure
                     {
                         Console.WriteLine("(You have four choices to ask the person:");
                         Console.WriteLine("1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
-                        if (Console.ReadKey().Key == ConsoleKey.D1)
+                        bool wrongInput = true;
+                        while (wrongInput) //LOOP DO NOT REMOVE *COUL*
                         {
-                            Console.WriteLine();
-                            Console.WriteLine("We're... trapped inside of a slaughterhouse..");
-                            Console.WriteLine();
-                            
-                        }
+                            if (Console.ReadKey().Key == ConsoleKey.D1)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("We're... trapped inside of a slaughterhouse..");
+                                Console.WriteLine();
 
-                        else if (Console.ReadKey().Key == ConsoleKey.D2)
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("I don't think that's important right now");
-                            Console.WriteLine();
-                            
-                        }
+                            }
 
-                        else if (Console.ReadKey().Key == ConsoleKey.D3)
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("I'm not sure...");
-                            Console.WriteLine();
-                            
-                        }
+                            else if (Console.ReadKey().Key == ConsoleKey.D2)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("I don't think that's important right now");
+                                Console.WriteLine();
 
-                        else if (Console.ReadKey().Key == ConsoleKey.D4)
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("...");
-                            Console.WriteLine();
-                           
-                        }
+                            }
 
-                        else
-                            Console.WriteLine("...");
+                            else if (Console.ReadKey().Key == ConsoleKey.D3)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("I'm not sure...");
+                                Console.WriteLine();
+
+                            }
+
+                            else if (Console.ReadKey().Key == ConsoleKey.D4)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("...");
+                                Console.WriteLine();
+                                wrongInput = false; //END ZA LOOP
+                            }
+
+                            else
+                                Console.WriteLine("...");
+                        }
                         
                     }
                     Console.WriteLine("Press any button to exit...");
