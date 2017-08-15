@@ -85,16 +85,19 @@ namespace TextAdventure
 
                     Console.WriteLine(">As you enter the next room you see three men - all of them unfriendly");
                     Console.WriteLine("What do you do? Shoot or don't shoot?");
-                    Console.ReadLine();
+                    string answer2 = Console.ReadLine();
                                         
-                    if (answer == "Shoot")
+                    if (answer2 == "Shoot")
                     {
+                        Console.WriteLine();
                         Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
                     }
-                    else if (answer == "Don't shoot")
+                    else if (answer2 == "Don't shoot")
                     {
+                        Console.WriteLine();
                         Console.WriteLine(">Your newfound friend shot them all, killing them - you can move on");
                     }
+                    Console.WriteLine();
                     Console.WriteLine("That was close.. they could have killed us both!");
 
 
