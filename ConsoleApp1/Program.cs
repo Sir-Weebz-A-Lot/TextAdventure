@@ -90,10 +90,12 @@ namespace TextAdventure
                 Console.ReadKey();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
+                
                 if (Console.ReadKey().Key == ConsoleKey.D1)
                 {
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
                     Console.WriteLine(">You take the firearm and rush to the door");
-                    Console.WriteLine("(Press enter to continue)");
+                    Console.WriteLine("(Press any key to continue...)");
                     Console.WriteLine();
                     Console.ReadKey();
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -103,17 +105,19 @@ namespace TextAdventure
                     
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
-
-
+                    {
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
-
+                        Console.WriteLine();
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
+                    }
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
-
+                    {
                         Console.WriteLine(">Your newfound friend shot them all, killing them - you can move on");
 
-                    Console.WriteLine("That was close.. they could have killed us both!");
+                        Console.WriteLine("That was close.. they could have killed us both!");
 
-
+                    }
                 }
                 else if (Console.ReadKey().Key == ConsoleKey.D2)
                 {
