@@ -10,7 +10,7 @@ namespace TextAdventure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's your Name?");
+            Console.WriteLine("What's your name?");
             string name;
             name = Console.ReadLine();
             Console.WriteLine();
@@ -22,7 +22,7 @@ namespace TextAdventure
                 while (wrongInput)
                 {
                     Console.WriteLine("Can you hear me?");
-                    Console.WriteLine("1) Yes 2)No");
+                    Console.WriteLine("1) Yes 2) No");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
