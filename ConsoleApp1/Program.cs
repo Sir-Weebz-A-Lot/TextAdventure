@@ -22,20 +22,21 @@ namespace TextAdventure
                 while (wrongInput)
                 {
                     Console.WriteLine("Can you hear me?");
-                    string answer = Console.ReadLine();
-                    Console.WriteLine();
-                    if (answer == "Yes")
+                    Console.WriteLine("1) Yes 2)No");
+                    if (Console.ReadKey().Key == ConsoleKey.D1)
                     {
+                        Console.WriteLine();
                         Console.WriteLine("Good, we can get started.");
                         Console.WriteLine();
                         wrongInput = false;
                     }
 
-                    else if (answer == "No")
+                    else if (Console.ReadKey().Key == ConsoleKey.D2)
                     {
+                        Console.WriteLine();
                         Console.WriteLine(">You slept another 7 years<");
                         Console.WriteLine("(Press enter to quit)");
-                        Console.ReadLine();
+                        Console.ReadKey(); // check for button press before exiting
                         Environment.Exit(0);
                     }
 
@@ -98,13 +99,52 @@ namespace TextAdventure
                 Console.WriteLine(name + ",can you hear me?  Wake up!");
                 Console.WriteLine(">You wake up, not knowing where you are or even who the person who woke you up is");
 
+                {
+                 
+                    {
+                        Console.WriteLine("(You have four choices to ask the person: 1.) 'Where are we?' 2.) 'Who are you?' 3.) 'What happened?' 4.) 'I have no questions to ask.'");
+                        if (Console.ReadKey().Key == ConsoleKey.D1)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("We're... trapped inside of a slaughterhouse..");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D2)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I don't think that's important right now");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D3)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("I'm not sure...");
+                            Console.WriteLine();
+                            
+                        }
+
+                        else if (Console.ReadKey().Key == ConsoleKey.D4)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("...");
+                            Console.WriteLine();
+                           
+                        }
+
+                        else
+                            Console.WriteLine("...");
+                        
+                    }
+                    Console.WriteLine("Press any button to exit...");
+                    Console.ReadKey(); // checks for button press
+                }
 
             }
-            Console.ReadLine();
-            Console.ReadLine();
-            Console.ReadLine();
-
-
         }
     }
 }
+
