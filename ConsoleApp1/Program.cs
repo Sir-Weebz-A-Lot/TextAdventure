@@ -83,16 +83,14 @@ namespace TextAdventure
                 Console.WriteLine();
                 Console.ReadKey();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
-
-
-                string answer;
-                answer = (Console.ReadLine());
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
                 if (Console.ReadKey().Key == ConsoleKey.D1)
                 {
                     Console.WriteLine(">You take the firearm and rush to the door");
                     Console.WriteLine("(Press enter to continue)");
+                    Console.WriteLine();
                     Console.ReadKey();
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                     Console.WriteLine(">As you enter the next room you see three men - all of them unfriendly");
 
