@@ -26,6 +26,7 @@ namespace TextAdventure
             Console.WriteLine();
             Console.SetCursorPosition(0, Console.CursorTop - 1);
             {
+                ConsoleKeyInfo choice = Console.ReadKey();
                 bool wrongInput = true;
                 while (wrongInput)
                 {
@@ -34,7 +35,7 @@ namespace TextAdventure
 
                     Console.WriteLine("1) Yes 2) No");
 
-                    if (Console.ReadKey().Key == ConsoleKey.D1)
+                    if (choice.Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
 
@@ -46,7 +47,7 @@ namespace TextAdventure
                         wrongInput = false;
                     }
 
-                    else if (Console.ReadKey().Key == ConsoleKey.D2)
+                    else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
                         Console.WriteLine(">Three men enter the room and kill you both");
@@ -102,7 +103,6 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
-                ConsoleKeyInfo choice = Console.ReadKey();
                 if (choice.Key == ConsoleKey.D1)
                 {
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
