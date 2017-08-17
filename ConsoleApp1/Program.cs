@@ -101,10 +101,8 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
-                Console.WriteLine();
-                bool SecondPath = false;
-                
-                if (Console.ReadKey().Key == ConsoleKey.D1)
+                ConsoleKeyInfo choice = Console.ReadKey();
+                if (choice.Key == ConsoleKey.D1)
                 {
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     Console.WriteLine();
@@ -138,7 +136,7 @@ namespace TextAdventure
                     Console.WriteLine();
 
                 }
-                else if (Console.ReadKey().Key == ConsoleKey.D2)
+                else if (choice.Key == ConsoleKey.D2)
                 {
                     
                     Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
@@ -146,25 +144,17 @@ namespace TextAdventure
                     Console.WriteLine();
                     Console.WriteLine(">As you enter the next room you see three men - all of them armed");
                     Console.WriteLine();
-                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them.");
+                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them");
                     Console.WriteLine("Why didn't you take the gun I left you?");
                     Console.WriteLine("1) I thought i wouldn't need it 2)Where are we?");
-                    SecondPath = true;
-
+                    if (Console.ReadKey().Key == ConsoleKey.D1)
+                    {
+                        Console.WriteLine("It isn't safe to go around unarmed anymore");
+                        Console.WriteLine(">He hands you his pistol");
+                        Console.WriteLine("If you wanna stay alive you're gonna have to use it");
+                    }
                 }
                 Console.ReadKey();
-                Console.WriteLine();
-                Console.SetCursorPosition(0, Console.CursorTop - 1);
-                if (SecondPath == true && Console.ReadKey().Key == ConsoleKey.D1)
-                {
-                    Console.WriteLine("It isn't safe to go around unarmed anymore");
-                    Console.WriteLine(">He hands you his pistol");
-                    Console.WriteLine("If you wanna stay alive you're gonna have to use it");
-                }
-                Console.ReadKey();
-                Console.ReadKey();
-                Console.ReadKey();
-
             }
         }
     }
