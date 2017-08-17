@@ -33,6 +33,7 @@ namespace TextAdventure
                     Console.WriteLine(name + ", wake up! Can you hear me?");
 
                     Console.WriteLine("1) Yes 2) No");
+
                     if (Console.ReadKey().Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
@@ -118,14 +119,15 @@ namespace TextAdventure
                     Console.WriteLine();
                     
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
-                    if (Console.ReadKey().Key == ConsoleKey.D1)
+                    choice = Console.ReadKey();
+                    if (choice.Key == ConsoleKey.D1)
                     {
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
                         Console.WriteLine();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                     }
-                    else if (Console.ReadKey().Key == ConsoleKey.D2)
+                    else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine(">Your newfound friend killed them all. You can move on");
                     }
