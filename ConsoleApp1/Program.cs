@@ -147,13 +147,21 @@ namespace TextAdventure
                     Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them");
                     Console.WriteLine("Why didn't you take the gun I left you?");
                     Console.WriteLine("1) I thought i wouldn't need it 2)Where are we?");
-                    if (Console.ReadKey().Key == ConsoleKey.D1)
+                    choice = Console.ReadKey();
+                    if (choice.Key == ConsoleKey.D1)
                     {
+                        Console.WriteLine();
                         Console.WriteLine("It isn't safe to go around unarmed anymore");
                         Console.WriteLine(">He hands you his pistol");
                         Console.WriteLine("If you wanna stay alive you're gonna have to use it");
                     }
+                    else if (choice.Key == ConsoleKey.D2)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("I'll explain everything soon");
+                    }
                 }
+                Console.WriteLine("END OF STORY -- Press any key to exit...");
                 Console.ReadKey();
             }
         }
