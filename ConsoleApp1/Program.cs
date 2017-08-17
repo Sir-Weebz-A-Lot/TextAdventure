@@ -20,7 +20,7 @@ namespace TextAdventure
             Console.WriteLine("Hello, " + name);
             Console.WriteLine();
             Console.WriteLine(">Adventure start<");
-            Console.WriteLine("(Press enter/space to continue)");
+            Console.WriteLine("(Press any key to continue...)");
             Console.WriteLine();
             Console.ReadKey();
             Console.WriteLine();
@@ -48,7 +48,7 @@ namespace TextAdventure
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(">Since you couldn't hear him, you died horribly");
+                        Console.WriteLine(">Three men enter the room and kill you both");
                         Console.WriteLine("(Press any key to quit...)");
                         Console.ReadKey(); // check for button press before exiting
                         Environment.Exit(0);
@@ -94,7 +94,7 @@ namespace TextAdventure
                 Console.WriteLine();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
 
-                Console.WriteLine(">You see a firearm sitting next to you");
+                Console.WriteLine(">You notice a pistol sitting next to you");
                 Console.WriteLine("(press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
@@ -102,12 +102,13 @@ namespace TextAdventure
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
                 Console.WriteLine();
+                bool SecondPath = false;
                 
                 if (Console.ReadKey().Key == ConsoleKey.D1)
                 {
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     Console.WriteLine();
-                    Console.WriteLine(">You take the firearm and rush to the door");
+                    Console.WriteLine(">You take the pistol and rush to the door");
                     Console.WriteLine("(Press any key to continue...)");
                     Console.ReadKey();
                     Console.WriteLine();
@@ -115,34 +116,51 @@ namespace TextAdventure
 
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine(">As you enter the next room you see three men - all of them unfriendly");
+                    Console.WriteLine(">As you enter the next room you see three men - all of them armed");
                     Console.WriteLine();
                     
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
                     if (Console.ReadKey().Key == ConsoleKey.D1)
                     {
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
-                        Console.WriteLine(">You shot all three of them with the weapon you picked up, killing them - you can move on");
+                        Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
                         Console.WriteLine();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                     }
                     else if (Console.ReadKey().Key == ConsoleKey.D2)
                     {
-                        Console.WriteLine(">Your newfound friend shot them all, killing them - you can move on");
+                        Console.WriteLine(">Your newfound friend killed them all. You can move on");
                     }
 
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine("That was close.. they could have killed us both!");
+                    Console.WriteLine("That was close.. they could have killed us!");
                     Console.WriteLine();
 
                 }
                 else if (Console.ReadKey().Key == ConsoleKey.D2)
                 {
-                    Console.WriteLine(">You leave the firearm and rush to the door, hoping you don't need it");
+                    
+                    Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine(">As you enter the next room you see three men - all of them armed");
+                    Console.WriteLine();
+                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them.");
+                    Console.WriteLine("Why didn't you take the gun I left you?");
+                    Console.WriteLine("1) I thought i wouldn't need it 2)Where are we?");
+                    SecondPath = true;
+
                 }
-
-
+                Console.ReadKey();
+                Console.WriteLine();
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+                if (SecondPath == true && Console.ReadKey().Key == ConsoleKey.D1)
+                {
+                    Console.WriteLine("It isn't safe to go around unarmed anymore");
+                    Console.WriteLine(">He hands you his pistol");
+                    Console.WriteLine("If you wanna stay alive you're gonna have to use it");
+                }
                 Console.ReadKey();
                 Console.ReadKey();
                 Console.ReadKey();
