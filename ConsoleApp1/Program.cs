@@ -34,8 +34,8 @@ namespace TextAdventure
 
                     Console.WriteLine(name + ", wake up! Can you hear me?");
 
-                    Console.WriteLine("1) Yes 2) No");
-                    ConsoleKeyInfo choice = Console.ReadKey();
+                    Console.WriteLine("1) Yes 2) Don't respond");
+                    ConsoleKeyInfo choice = Console.ReadKey(); // don't delete choice variable
                     if (choice.Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
@@ -72,7 +72,10 @@ namespace TextAdventure
                 Console.WriteLine();
 
 
-                Console.WriteLine(">As you wake up you notice the room around you - it's filled with weapons, the walls are horribly damaged and you hear what sounds like gunfire coming from outside");
+                Console.WriteLine(">As you wake up you notice the room around you");
+                Console.WriteLine("it's filled with weapons and the walls are horribly damaged");
+                Console.WriteLine("you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
+
                 Console.WriteLine("(press any key to continue...)");
                 Console.WriteLine();
 
@@ -104,8 +107,8 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
-                ConsoleKeyInfo choice = Console.ReadKey();
-                if (choice.Key == ConsoleKey.D1)
+                ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
+                if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
                 {
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     Console.WriteLine();
@@ -121,7 +124,7 @@ namespace TextAdventure
                     Console.WriteLine();
                     
                     Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
-                    choice = Console.ReadKey();
+                    choice = Console.ReadKey(); // sets choice to the button pressed (instead of calling choice again)
                     if (choice.Key == ConsoleKey.D1)
                     {
                         Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
@@ -131,12 +134,12 @@ namespace TextAdventure
                     else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(">Your newfound friend killed them all. You can move on");
+                        Console.WriteLine(">Your newfound friend killed them all. You can move on"); //TODO: find something better then "newfound friend" (maybe name the character?)
                     }
 
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine("That was close.. they could have killed us!");
+                    Console.WriteLine("That was close.. they could have killed us!"); //TODO:replace with choice specific dialogue
                     Console.WriteLine();
 
                 }
@@ -148,8 +151,9 @@ namespace TextAdventure
                     Console.WriteLine();
                     Console.WriteLine(">As you enter the next room you see three men - all of them armed");
                     Console.WriteLine();
-                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them");
+                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
                     Console.WriteLine("Why didn't you take the gun I left you?");
+                    Console.WriteLine();
                     Console.WriteLine("1) I thought i wouldn't need it 2)Where are we?");
                     choice = Console.ReadKey();
                     if (choice.Key == ConsoleKey.D1)
@@ -165,7 +169,7 @@ namespace TextAdventure
                         Console.WriteLine("I'll explain everything soon");
                     }
                 }
-                Console.WriteLine("END OF STORY -- Press any key to exit...");
+                Console.WriteLine("END OF STORY -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
             }
         }
