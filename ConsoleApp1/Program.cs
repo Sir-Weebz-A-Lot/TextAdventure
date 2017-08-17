@@ -25,8 +25,9 @@ namespace TextAdventure
             Console.ReadKey();
             Console.WriteLine();
             Console.SetCursorPosition(0, Console.CursorTop - 1);
+            
             {
-                ConsoleKeyInfo choice = Console.ReadKey();
+                
                 bool wrongInput = true;
                 while (wrongInput)
                 {
@@ -34,7 +35,7 @@ namespace TextAdventure
                     Console.WriteLine(name + ", wake up! Can you hear me?");
 
                     Console.WriteLine("1) Yes 2) No");
-
+                    ConsoleKeyInfo choice = Console.ReadKey();
                     if (choice.Key == ConsoleKey.D1)
                     {
                         Console.WriteLine();
@@ -103,6 +104,7 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
+                ConsoleKeyInfo choice = Console.ReadKey();
                 if (choice.Key == ConsoleKey.D1)
                 {
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -128,6 +130,7 @@ namespace TextAdventure
                     }
                     else if (choice.Key == ConsoleKey.D2)
                     {
+                        Console.WriteLine();
                         Console.WriteLine(">Your newfound friend killed them all. You can move on");
                     }
 
