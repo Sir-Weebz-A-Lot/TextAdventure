@@ -122,7 +122,6 @@ namespace TextAdventure
                     choice = Console.ReadKey();
                     if (choice.Key == ConsoleKey.D1)
                     {
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
                         Console.WriteLine();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
