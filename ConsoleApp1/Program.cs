@@ -63,7 +63,7 @@ namespace TextAdventure
             {
 
                 Console.WriteLine("We're under attack, they've found us");
-                Console.WriteLine("(press any key to continue...)");
+                Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
                 Console.WriteLine();
@@ -76,7 +76,7 @@ namespace TextAdventure
                 Console.WriteLine("it's filled with weapons and the walls are horribly damaged");
                 Console.WriteLine("you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
 
-                Console.WriteLine("(press any key to continue...)");
+                Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
                 Console.WriteLine();
@@ -85,7 +85,7 @@ namespace TextAdventure
                 Console.WriteLine();
 
                 Console.WriteLine(">You're overwhelmed with pain");
-                Console.WriteLine("(press any key to continue...)");
+                Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
                 Console.WriteLine();
@@ -94,14 +94,14 @@ namespace TextAdventure
                 Console.WriteLine();
 
                 Console.WriteLine("Come on, through here");
-                Console.WriteLine("(press any key to continue...)");
+                Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
                 Console.WriteLine();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                 Console.WriteLine(">You notice a pistol sitting next to you");
-                Console.WriteLine("(press any key to continue...)");
+                Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -133,19 +133,39 @@ namespace TextAdventure
 
                         Console.WriteLine();
                         Console.WriteLine("That was a close one back there, " + name);
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
 
                         Console.WriteLine();
                         Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
 
                         Console.WriteLine();
                         Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
 
                         Console.WriteLine();
                         Console.WriteLine("'Get over here!  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
+
+                        Console.WriteLine();
+                        Console.WriteLine("What are you doing, kid? You could have gotten yourself killed out there.");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.WriteLine();
+                        Console.WriteLine("Here, take this");
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine(">The man hands you a box of grenades");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.WriteLine();
+
                     }
                     else if (choice.Key == ConsoleKey.D2)
                     {
