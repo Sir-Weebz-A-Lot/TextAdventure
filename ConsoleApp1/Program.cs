@@ -134,13 +134,9 @@ namespace TextAdventure
                     else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(">Your newfound friend killed them all. You can move on"); //TODO: find something better then "newfound friend" (maybe name the character?)
+                        Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
                     }
 
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine("That was close.. they could have killed us!"); //TODO:replace with choice specific dialogue
-                    Console.WriteLine();
 
                 }
                 else if (choice.Key == ConsoleKey.D2)
