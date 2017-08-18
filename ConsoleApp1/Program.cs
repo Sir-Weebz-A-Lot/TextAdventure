@@ -137,6 +137,8 @@ namespace TextAdventure
                         Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
                     }
 
+                    Console.WriteLine("That was close...");
+
 
                 }
                 else if (choice.Key == ConsoleKey.D2)
@@ -147,10 +149,10 @@ namespace TextAdventure
                     Console.WriteLine();
                     Console.WriteLine(">As you enter the next room you see three men - all of them armed");
                     Console.WriteLine();
-                    Console.WriteLine(">Before you can even move an inch your newfound friend pulls out his assault rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
+                    Console.WriteLine(">Before you can even move an inch, Dmitri pulls out his rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
                     Console.WriteLine("Why didn't you take the gun I left you?");
                     Console.WriteLine();
-                    Console.WriteLine("1) I thought i wouldn't need it 2)Where are we?");
+                    Console.WriteLine("1) I thought I wouldn't need it 2) Where are we?");
                     choice = Console.ReadKey();
                     if (choice.Key == ConsoleKey.D1)
                     {
@@ -165,7 +167,7 @@ namespace TextAdventure
                         Console.WriteLine("I'll explain everything soon");
                     }
                 }
-                Console.WriteLine("END OF STORY -- Press any key to exit..."); // instead of ReadLine spam
+                Console.WriteLine("Finn -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
             }
         }
