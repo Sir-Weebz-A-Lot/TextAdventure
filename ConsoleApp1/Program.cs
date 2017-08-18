@@ -130,14 +130,28 @@ namespace TextAdventure
                         Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
                         Console.WriteLine();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
+
+                        Console.WriteLine();
+                        Console.WriteLine("That was a close one back there, " + name);
+                        Console.WriteLine();
+
+                        Console.WriteLine();
+                        Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building");
+                        Console.WriteLine();
+
+                        Console.WriteLine();
+                        Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before");
+                        Console.WriteLine();
+
+                        Console.WriteLine();
+                        Console.WriteLine("'Get over here!  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
+                        Console.WriteLine();
                     }
                     else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
                         Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
                     }
-
-                    Console.WriteLine("That was close...");
 
 
                 }
