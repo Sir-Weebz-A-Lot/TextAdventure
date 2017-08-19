@@ -106,8 +106,10 @@ namespace TextAdventure
                 Console.ReadKey();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
-                Console.WriteLine("Do you pick it up or leave it there? (1/2)");
-
+                bool wrongInput = true; //set it to true just incase it was false from prev loop
+                while (wrongInput) //the loop
+                {
+                    Console.WriteLine("Do you pick it up or leave it there? (1/2)");
                     ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
                     if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
                     {
@@ -129,7 +131,7 @@ namespace TextAdventure
 
                         if (choice.Key == ConsoleKey.D1)
                         {
-                            
+
                             Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -168,27 +170,28 @@ namespace TextAdventure
                             Console.WriteLine(">The man hands you a box of grenades");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
+                            wrongInput = false; //loop break
 
 
                         }
                         else if (choice.Key == ConsoleKey.D2)
                         {
-                            
+
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
                             Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
-
+                            wrongInput = false; //loop break
                         }
                     }
-                 
-                
 
-                    
+
+
+
                     else if (choice.Key == ConsoleKey.D2)
                     {
-                        
+
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
                         Console.WriteLine("(Press any key to continue...)");
@@ -204,18 +207,18 @@ namespace TextAdventure
                         Console.WriteLine();
                         Console.WriteLine("Why didn't you take the gun I left you?");
                         Console.WriteLine("(Press any key to continue...)");
-                    Console.WriteLine();
-                        Console.ReadKey();                
+                        Console.WriteLine();
+                        Console.ReadKey();
                         Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
-                    Console.SetCursorPosition(0, Console.CursorTop - 2);
-                    choice = Console.ReadKey();
-                        
+                        Console.SetCursorPosition(0, Console.CursorTop - 2);
+                        choice = Console.ReadKey();
+
                         if (choice.Key == ConsoleKey.D1)
                         {
-                            
+
                             Console.WriteLine();
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
-                        Console.WriteLine("It isn't safe to go around unarmed anymore");
+                            Console.SetCursorPosition(0, Console.CursorTop - 1);
+                            Console.WriteLine("It isn't safe to go around unarmed anymore");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
@@ -225,8 +228,9 @@ namespace TextAdventure
                             Console.WriteLine();
                             Console.WriteLine("If you wanna stay alive you're gonna have to use it");
                             Console.WriteLine("(Press any key to continue...)");
-                        Console.WriteLine();
+                            Console.WriteLine();
                             Console.ReadKey();
+                            wrongInput = false; //loop break
                         }
                         else if (choice.Key == ConsoleKey.D2)
                         {
@@ -235,8 +239,10 @@ namespace TextAdventure
                             Console.WriteLine("I'll explain everything soon");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
+                            wrongInput = false; //loop break
                         }
                     }
+                }
                 
                 Console.WriteLine("Finn -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
