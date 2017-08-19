@@ -32,7 +32,7 @@ namespace TextAdventure
                 while (wrongInput)
                 {
 
-                    Console.WriteLine(name + ", \"wake up! Can you hear me?\""); // you can wrap dialogue in quotations by using \ before the quotes and \ after the dialogue "\"hello\"" like that
+                    Console.WriteLine(name + ", \"Wake up! Can you hear me?\""); // you can wrap dialogue in quotations by using \ before the quotes and \ after the dialogue "\"hello\"" like that
 
                     Console.WriteLine("1) Yes 2) Don't respond");
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -52,7 +52,7 @@ namespace TextAdventure
                     else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.WriteLine();
-                        Console.WriteLine(">Three men enter the room and kill you both");
+                        Console.WriteLine(">Three men enter the room and kill you both.");
                         Console.WriteLine("(Press any key to quit...)");
                         Console.ReadKey(); // check for button press before exiting
                         Environment.Exit(0);
@@ -63,7 +63,7 @@ namespace TextAdventure
             }
             {
 
-                Console.WriteLine("\"We're under attack, they've found us\"");
+                Console.WriteLine("\"We're under attack, they've found us.\"");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
@@ -73,8 +73,8 @@ namespace TextAdventure
                 Console.WriteLine();
 
 
-                Console.WriteLine(">As you wake up you notice the room around you");
-                Console.WriteLine(">it's filled with weapons and the walls are horribly damaged");
+                Console.WriteLine(">As you wake up you notice the room around you.");
+                Console.WriteLine(">it's filled with weapons and the walls are horribly damaged.");
                 Console.WriteLine(">you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
 
                 Console.WriteLine("(Press any key to continue...)");
@@ -85,7 +85,7 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
 
-                Console.WriteLine(">You're overwhelmed with pain");
+                Console.WriteLine(">You're overwhelmed with pain.");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
@@ -94,14 +94,14 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
 
-                Console.WriteLine("\"Come on, through here\"");
+                Console.WriteLine("\"Come on, through here.\"");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
                 Console.WriteLine();
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
 
-                Console.WriteLine(">You notice a pistol sitting next to you");
+                Console.WriteLine(">You notice a pistol sitting next to you.");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
@@ -117,7 +117,7 @@ namespace TextAdventure
                     {
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine();
-                        Console.WriteLine(">You take the pistol and rush to the door");
+                        Console.WriteLine(">You take the pistol and rush to the door.");
                         Console.WriteLine("(Press any key to continue...)");
                         Console.ReadKey();
                         Console.WriteLine();
@@ -125,7 +125,7 @@ namespace TextAdventure
 
                         Console.WriteLine();
                         Console.WriteLine();
-                        Console.WriteLine(">As you enter the next room you see three men - all of them armed");
+                        Console.WriteLine(">As you enter the next room you see three men - all of them armed.");
                         Console.WriteLine();
 
                         Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
@@ -134,7 +134,7 @@ namespace TextAdventure
                         if (choice.Key == ConsoleKey.D1)
                         {
 
-                            Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
+                            Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on.");
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
 
