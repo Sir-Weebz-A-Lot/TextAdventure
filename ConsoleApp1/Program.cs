@@ -209,9 +209,16 @@ namespace TextAdventure
                         Console.WriteLine("(Press any key to continue...)");
                         Console.WriteLine();
                         Console.ReadKey();
-                        Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
-                        Console.SetCursorPosition(0, Console.CursorTop - 2);
-                        choice = Console.ReadKey();
+                        while (wrongInput)
+                        {
+                            Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
+                            Console.SetCursorPosition(0, Console.CursorTop - 2);
+                            choice = Console.ReadKey();
+                            if (choice.Key == ConsoleKey.D1)
+                                wrongInput = false;
+                            else if (choice.Key == ConsoleKey.D2)
+                                wrongInput = false;
+                        }
 
                         if (choice.Key == ConsoleKey.D1)
                         {
