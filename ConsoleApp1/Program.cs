@@ -10,22 +10,24 @@ namespace TextAdventure
     {
         static void Main(string[] args)
         {
-
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Welcome to (unnamed) text adventure!  We hope you enjoy it");
             Console.WriteLine();
             Console.WriteLine("Now tell us your name");
             string name;
             name = Console.ReadLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Hello, " + name);
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(">Adventure start<");
             Console.WriteLine("(Press any key to continue...)");
             Console.WriteLine();
             Console.ReadKey();
             Console.WriteLine();
             Console.SetCursorPosition(0, Console.CursorTop - 1);
-
+            Console.ForegroundColor = ConsoleColor.White;
             {
 
                 bool wrongInput = true;
@@ -74,9 +76,11 @@ namespace TextAdventure
 
 
                 Console.WriteLine(">As you wake up you notice the room around you.");
+                Console.WriteLine();
                 Console.WriteLine(">it's filled with weapons and the walls are horribly damaged.");
+                Console.WriteLine();
                 Console.WriteLine(">you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
-
+                Console.WriteLine();
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
@@ -115,6 +119,7 @@ namespace TextAdventure
                     ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
                     if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine();
                         Console.WriteLine(">You take the pistol and rush to the door.");
@@ -133,7 +138,7 @@ namespace TextAdventure
 
                         if (choice.Key == ConsoleKey.D1)
                         {
-
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
                             Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on.");
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -145,19 +150,19 @@ namespace TextAdventure
                             Console.WriteLine();
 
                             Console.WriteLine();
-                            Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building");
+                            Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
 
                             Console.WriteLine();
-                            Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before");
+                            Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
 
                             Console.WriteLine();
-                            Console.WriteLine("\"Get over here!\"  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
+                            Console.WriteLine("\"Get over here!\"  Take cover from them before they blow you to bits!' - says a man wearing a fur cap."); //Give suggestions on other, better details to add to this/replace this with
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
@@ -166,10 +171,10 @@ namespace TextAdventure
                             Console.WriteLine("\"What are you doing, kid? You could have gotten yourself killed out there.\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
-                            Console.WriteLine("\"Here, take this\"");
+                            Console.WriteLine("\"Here, take this.\"");
                             Console.WriteLine();
                             Console.WriteLine();
-                            Console.WriteLine(">The man hands you a box of grenades");
+                            Console.WriteLine(">The man hands you a box of grenades.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
                             wrongInput = false; //loop break
@@ -178,10 +183,10 @@ namespace TextAdventure
                         }
                         else if (choice.Key == ConsoleKey.D2)
                         {
-
+                            Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
-                            Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
+                            Console.WriteLine(">Dmitri killed them all. You can move on."); //Todo: Come up with a name for (character) that isn't "Dmitri"
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             wrongInput = false; //loop break
@@ -193,17 +198,18 @@ namespace TextAdventure
 
                     else if (choice.Key == ConsoleKey.D2)
                     {
-
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
-                        Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
+                        Console.SetCursorPosition(0, Console.CursorTop);
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        
+                        Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it.");
                         Console.WriteLine("(Press any key to continue...)");
                         Console.ReadKey();
                         Console.WriteLine();
-                        Console.WriteLine(">As you enter the next room you see three men - all of them armed");
+                        Console.WriteLine(">As you enter the next room you see three men - all of them armed.");
                         Console.WriteLine("(Press any key to continue...)");
                         Console.ReadKey();
                         Console.WriteLine();
-                        Console.WriteLine(">Before you can even move an inch, Dmitri pulls out his rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
+                        Console.WriteLine(">Before you can even move an inch, Dmitri pulls out his rifle and empties a magazine on all of them."); //TODO:shorten this it looks ugly in CMD
                         Console.WriteLine("(Press any key to continue...)");
                         Console.ReadKey();
                         Console.WriteLine();
@@ -213,7 +219,7 @@ namespace TextAdventure
                         Console.ReadKey();
                         while (wrongInput)
                         {
-                            Console.WriteLine("1) \"I thought I wouldn't need it\"\n 2) \"Where are we?\"");
+                            Console.WriteLine("1) \"I thought I wouldn't need it.\"\n 2) \"Where are we?\"");
                             Console.SetCursorPosition(0, Console.CursorTop - 2);
                                 choice = Console.ReadKey();
                                 if (choice.Key == ConsoleKey.D1)
@@ -224,18 +230,17 @@ namespace TextAdventure
 
                         if (choice.Key == ConsoleKey.D1)
                         {
-
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
-                            Console.WriteLine("\"It isn't safe to go around unarmed anymore\"");
+                            Console.WriteLine("\"It isn't safe to go around unarmed anymore.\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
-                            Console.WriteLine(">He hands you his pistol");
+                            Console.WriteLine(">He hands you his pistol.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
-                            Console.WriteLine("\"If you wanna stay alive you're gonna have to use it\"");
+                            Console.WriteLine("\"If you wanna stay alive you're gonna have to use it.\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
                             Console.ReadKey();
@@ -243,9 +248,9 @@ namespace TextAdventure
                         }
                         else if (choice.Key == ConsoleKey.D2)
                         {
-
+                            
                             Console.WriteLine();
-                            Console.WriteLine("I'll explain everything soon");
+                            Console.WriteLine("I'll explain everything soon.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             wrongInput = false; //loop break
@@ -253,6 +258,23 @@ namespace TextAdventure
                     }
                 }
                 
+                
+                if (Console.ForegroundColor == ConsoleColor.Blue)
+                {
+                    Console.WriteLine("You finished with Good Karma!");
+                }
+                else if (Console.ForegroundColor == ConsoleColor.Red)
+                {
+                    Console.WriteLine("You finished with Bad Karma!");
+                }
+                else if (Console.ForegroundColor == ConsoleColor.DarkRed)
+                {
+                    Console.WriteLine("You finished with Very Bad Karma!!");
+                        }
+                else if (Console.ForegroundColor == ConsoleColor.White)
+                {
+                    Console.WriteLine("You finished with Neutral Karma.");
+                }
                 Console.WriteLine("Finn -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
             }
