@@ -53,7 +53,8 @@ namespace TextAdventure
 
                     else if (choice.Key == ConsoleKey.D2)
                     {
-                        Console.WriteLine();
+
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine(">Three men enter the room and kill you both.");
                         Console.WriteLine("(Press any key to quit...)");
                         Console.ReadKey(); // check for button press before exiting
@@ -275,6 +276,7 @@ namespace TextAdventure
                 {
                     Console.WriteLine("You finished with Neutral Karma.");
                 }
+                Console.WriteLine();
                 Console.WriteLine("Finn -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
             }
