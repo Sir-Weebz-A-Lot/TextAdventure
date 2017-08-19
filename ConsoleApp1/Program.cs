@@ -25,9 +25,9 @@ namespace TextAdventure
             Console.ReadKey();
             Console.WriteLine();
             Console.SetCursorPosition(0, Console.CursorTop - 1);
-            
+
             {
-                
+
                 bool wrongInput = true;
                 while (wrongInput)
                 {
@@ -107,100 +107,135 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
                 Console.WriteLine("Do you pick it up or leave it there? (1/2)");
-                ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
-                if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
-                {
-                    Console.SetCursorPosition(0, Console.CursorTop - 1);
-                    Console.WriteLine();
-                    Console.WriteLine(">You take the pistol and rush to the door");
-                    Console.WriteLine("(Press any key to continue...)");
-                    Console.ReadKey();
-                    Console.WriteLine();
-                    Console.SetCursorPosition(0, Console.CursorTop - 1);
 
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine(">As you enter the next room you see three men - all of them armed");
-                    Console.WriteLine();
-                    
-                    Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
-                    choice = Console.ReadKey(); // sets choice to the button pressed (instead of calling choice again)
-                    if (choice.Key == ConsoleKey.D1)
+                    ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
+                    if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
                     {
-                        Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
+                        Console.WriteLine();
+                        Console.WriteLine(">You take the pistol and rush to the door");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                         Console.WriteLine();
-                        Console.WriteLine("That was a close one back there, " + name);
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.WriteLine(">As you enter the next room you see three men - all of them armed");
                         Console.WriteLine();
 
-                        Console.WriteLine();
-                        Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building");
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.ReadKey();
-                        Console.WriteLine();
+                        Console.WriteLine("What do you do?  Shoot or don't shoot? (1/2)");
+                        choice = Console.ReadKey(); // sets choice to the button pressed (instead of calling choice again)
 
-                        Console.WriteLine();
-                        Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before");
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.ReadKey();
-                        Console.WriteLine();
+                        if (choice.Key == ConsoleKey.D1)
+                        {
+                            
+                            Console.WriteLine(">You shot all three of them with the pistol you picked up. You can move on");
+                            Console.WriteLine();
+                            Console.SetCursorPosition(0, Console.CursorTop - 1);
 
-                        Console.WriteLine();
-                        Console.WriteLine("'Get over here!  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.ReadKey();
-                        Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine("That was a close one back there, " + name);
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
 
-                        Console.WriteLine();
-                        Console.WriteLine("What are you doing, kid? You could have gotten yourself killed out there.");
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.WriteLine();
-                        Console.WriteLine("Here, take this");
-                        Console.WriteLine();
-                        Console.WriteLine();
-                        Console.WriteLine(">The man hands you a box of grenades");
-                        Console.WriteLine("(Press any key to continue...)");
-                        Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine(">Dmitri pats you on the back and points to the exit from the building");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
 
+                            Console.WriteLine();
+                            Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
+
+                            Console.WriteLine();
+                            Console.WriteLine("'Get over here!  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
+
+                            Console.WriteLine();
+                            Console.WriteLine("What are you doing, kid? You could have gotten yourself killed out there.");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.WriteLine();
+                            Console.WriteLine("Here, take this");
+                            Console.WriteLine();
+                            Console.WriteLine();
+                            Console.WriteLine(">The man hands you a box of grenades");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.WriteLine();
+
+
+                        }
+                        else if (choice.Key == ConsoleKey.D2)
+                        {
+                            
+                            Console.WriteLine();
+                            Console.SetCursorPosition(0, Console.CursorTop - 1);
+                            Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+
+                        }
                     }
-                    else if (choice.Key == ConsoleKey.D2)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(">Dmitri killed them all. You can move on"); //Todo: Come up with a name for (character) that isn't "Dmitri"
-                    }
+                 
+                
 
-
-                }
-                else if (choice.Key == ConsoleKey.D2)
-                {
                     
-                    Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine(">As you enter the next room you see three men - all of them armed");
-                    Console.WriteLine();
-                    Console.WriteLine(">Before you can even move an inch, Dmitri pulls out his rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
-                    Console.WriteLine("Why didn't you take the gun I left you?");
-                    Console.WriteLine();
-                    Console.WriteLine("1) I thought I wouldn't need it 2) Where are we?");
-                    choice = Console.ReadKey();
-                    if (choice.Key == ConsoleKey.D1)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine("It isn't safe to go around unarmed anymore");
-                        Console.WriteLine(">He hands you his pistol");
-                        Console.WriteLine("If you wanna stay alive you're gonna have to use it");
-                    }
                     else if (choice.Key == ConsoleKey.D2)
                     {
+                        
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
+                        Console.WriteLine(">You leave the pistol and rush to the door, hoping you don't need it");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
                         Console.WriteLine();
-                        Console.WriteLine("I'll explain everything soon");
+                        Console.WriteLine(">As you enter the next room you see three men - all of them armed");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.WriteLine(">Before you can even move an inch, Dmitri pulls out his rifle and empties a magazine on all of them"); //TODO:shorten this it looks ugly in CMD
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.WriteLine("Why didn't you take the gun I left you?");
+                        Console.WriteLine("(Press any key to continue...)");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
+                        Console.WriteLine("1) I thought I wouldn't need it 2) Where are we?");
+                        choice = Console.ReadKey();
+                        
+                        if (choice.Key == ConsoleKey.D1)
+                        {
+                            
+                            Console.WriteLine();
+                            Console.WriteLine("It isn't safe to go around unarmed anymore");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
+                            Console.WriteLine(">He hands you his pistol");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                            Console.WriteLine();
+                            Console.WriteLine("If you wanna stay alive you're gonna have to use it");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                        }
+                        else if (choice.Key == ConsoleKey.D2)
+                        {
+
+                            Console.WriteLine();
+                            Console.WriteLine("I'll explain everything soon");
+                            Console.WriteLine("(Press any key to continue...)");
+                            Console.ReadKey();
+                        }
                     }
-                }
+                
                 Console.WriteLine("Finn -- Press any key to exit..."); // instead of ReadLine spam
                 Console.ReadKey();
             }
