@@ -32,7 +32,7 @@ namespace TextAdventure
                 while (wrongInput)
                 {
 
-                    Console.WriteLine(name + ", wake up! Can you hear me?");
+                    Console.WriteLine(name + ", \"wake up! Can you hear me?\""); // you can wrap dialogue in quotations by using \ before the quotes and \ after the dialogue "\"hello\"" like that
 
                     Console.WriteLine("1) Yes 2) Don't respond");
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -42,7 +42,7 @@ namespace TextAdventure
                         Console.WriteLine();
 
                         Console.WriteLine();
-                        Console.WriteLine("Get up, we need to go, now!");
+                        Console.WriteLine("\"Get up, we need to go, now!\"");
 
 
                         Console.WriteLine();
@@ -63,7 +63,7 @@ namespace TextAdventure
             }
             {
 
-                Console.WriteLine("We're under attack, they've found us");
+                Console.WriteLine("\"We're under attack, they've found us\"");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
 
@@ -74,8 +74,8 @@ namespace TextAdventure
 
 
                 Console.WriteLine(">As you wake up you notice the room around you");
-                Console.WriteLine("it's filled with weapons and the walls are horribly damaged");
-                Console.WriteLine("you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
+                Console.WriteLine(">it's filled with weapons and the walls are horribly damaged");
+                Console.WriteLine(">you hear what sounds like gunfire coming from outside."); // avoid long lines in the future
 
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
@@ -94,7 +94,7 @@ namespace TextAdventure
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
                 Console.WriteLine();
 
-                Console.WriteLine("Come on, through here");
+                Console.WriteLine("\"Come on, through here\"");
                 Console.WriteLine("(Press any key to continue...)");
                 Console.WriteLine();
                 Console.ReadKey();
@@ -139,7 +139,7 @@ namespace TextAdventure
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                             Console.WriteLine();
-                            Console.WriteLine("That was a close one back there, " + name);
+                            Console.WriteLine("\"That was a close one back there,\" " + name);
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
@@ -157,16 +157,16 @@ namespace TextAdventure
                             Console.WriteLine();
 
                             Console.WriteLine();
-                            Console.WriteLine("'Get over here!  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
+                            Console.WriteLine("\"Get over here!\"  Take cover from them before they blow you to bits!' - says a man wearing a fur cap"); //Give suggestions on other, better details to add to this/replace this with
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
 
                             Console.WriteLine();
-                            Console.WriteLine("What are you doing, kid? You could have gotten yourself killed out there.");
+                            Console.WriteLine("\"What are you doing, kid? You could have gotten yourself killed out there.\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
-                            Console.WriteLine("Here, take this");
+                            Console.WriteLine("\"Here, take this\"");
                             Console.WriteLine();
                             Console.WriteLine();
                             Console.WriteLine(">The man hands you a box of grenades");
@@ -207,13 +207,13 @@ namespace TextAdventure
                         Console.WriteLine("(Press any key to continue...)");
                         Console.ReadKey();
                         Console.WriteLine();
-                        Console.WriteLine("Why didn't you take the gun I left you?");
+                        Console.WriteLine("\"Why didn't you take the gun I left you?\"");
                         Console.WriteLine("(Press any key to continue...)");
                         Console.WriteLine();
                         Console.ReadKey();
                         while (wrongInput)
                         {
-                            Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
+                            Console.WriteLine("1) \"I thought I wouldn't need it\"\n 2) \"Where are we?\"");
                             Console.SetCursorPosition(0, Console.CursorTop - 2);
                                 choice = Console.ReadKey();
                                 if (choice.Key == ConsoleKey.D1)
@@ -227,7 +227,7 @@ namespace TextAdventure
 
                             Console.WriteLine();
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
-                            Console.WriteLine("It isn't safe to go around unarmed anymore");
+                            Console.WriteLine("\"It isn't safe to go around unarmed anymore\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
@@ -235,7 +235,7 @@ namespace TextAdventure
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
-                            Console.WriteLine("If you wanna stay alive you're gonna have to use it");
+                            Console.WriteLine("\"If you wanna stay alive you're gonna have to use it\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
                             Console.ReadKey();
