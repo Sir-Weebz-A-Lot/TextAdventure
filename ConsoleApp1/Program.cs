@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace TextAdventure
 {
+    class Write
+    {
+        public void WriteText(string text)
+        {
+
+            Console.WriteLine(text);
+            Console.WriteLine("(Press any key to continue...)");
+            Console.WriteLine();
+            Console.ReadKey();
+
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
