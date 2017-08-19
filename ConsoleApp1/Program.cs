@@ -35,6 +35,7 @@ namespace TextAdventure
                     Console.WriteLine(name + ", wake up! Can you hear me?");
 
                     Console.WriteLine("1) Yes 2) Don't respond");
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
                     ConsoleKeyInfo choice = Console.ReadKey(); // don't delete choice variable
                     if (choice.Key == ConsoleKey.D1)
                     {
@@ -110,6 +111,7 @@ namespace TextAdventure
                 while (wrongInput) //the loop
                 {
                     Console.WriteLine("Do you pick it up or leave it there? (1/2)");
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
                     ConsoleKeyInfo choice = Console.ReadKey(); // second choice variable because the first one exists in a if loop
                     if (choice.Key == ConsoleKey.D1) // check choice instead of keypress
                     {
@@ -213,8 +215,8 @@ namespace TextAdventure
                         {
                             Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
                             Console.SetCursorPosition(0, Console.CursorTop - 2);
-                            choice = Console.ReadKey();
-                            if (choice.Key == ConsoleKey.D1)
+                                choice = Console.ReadKey();
+                                if (choice.Key == ConsoleKey.D1)
                                 wrongInput = false;
                             else if (choice.Key == ConsoleKey.D2)
                                 wrongInput = false;
