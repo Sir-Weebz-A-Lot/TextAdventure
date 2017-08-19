@@ -145,7 +145,7 @@ namespace TextAdventure
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
 
                             Console.WriteLine();
-                            Console.WriteLine("\"That was a close one back there,\" " + name);
+                            Console.WriteLine("\"That was a close one back there, " + name + "\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
