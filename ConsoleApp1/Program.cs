@@ -204,17 +204,18 @@ namespace TextAdventure
                         Console.WriteLine();
                         Console.WriteLine("Why didn't you take the gun I left you?");
                         Console.WriteLine("(Press any key to continue...)");
-                        Console.ReadKey();
-                        Console.WriteLine();
-                        Console.SetCursorPosition(0, Console.CursorTop - 1);
-                        Console.WriteLine("1) I thought I wouldn't need it 2) Where are we?");
-                        choice = Console.ReadKey();
+                    Console.WriteLine();
+                        Console.ReadKey();                
+                        Console.WriteLine("1) I thought I wouldn't need it\n 2) Where are we?");
+                    Console.SetCursorPosition(0, Console.CursorTop - 2);
+                    choice = Console.ReadKey();
                         
                         if (choice.Key == ConsoleKey.D1)
                         {
                             
                             Console.WriteLine();
-                            Console.WriteLine("It isn't safe to go around unarmed anymore");
+                        Console.SetCursorPosition(0, Console.CursorTop - 1);
+                        Console.WriteLine("It isn't safe to go around unarmed anymore");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
@@ -224,6 +225,7 @@ namespace TextAdventure
                             Console.WriteLine();
                             Console.WriteLine("If you wanna stay alive you're gonna have to use it");
                             Console.WriteLine("(Press any key to continue...)");
+                        Console.WriteLine();
                             Console.ReadKey();
                         }
                         else if (choice.Key == ConsoleKey.D2)
