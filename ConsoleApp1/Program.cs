@@ -20,7 +20,7 @@ namespace TextAdventure
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Hello, " + name);
             Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(">Adventure start<");
             Console.WriteLine("(Press any key to continue...)");
             Console.WriteLine();
@@ -155,7 +155,7 @@ namespace TextAdventure
                             Console.WriteLine("(Press any key to continue...)");
                             Console.ReadKey();
                             Console.WriteLine();
-
+                            
                             Console.WriteLine();
                             Console.WriteLine(">You walk out the door and see an orange sky, the gunfire is louder than before.");
                             Console.WriteLine("(Press any key to continue...)");
