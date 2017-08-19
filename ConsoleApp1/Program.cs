@@ -172,12 +172,41 @@ namespace TextAdventure
                             Console.WriteLine("\"What are you doing, kid? You could have gotten yourself killed out there.\"");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
+                            Console.ReadKey();
                             Console.WriteLine("\"Here, take this.\"");
-                            Console.WriteLine();
                             Console.WriteLine();
                             Console.WriteLine(">The man hands you a box of grenades.");
                             Console.WriteLine("(Press any key to continue...)");
                             Console.WriteLine();
+                            Console.ReadKey();
+
+                            Console.WriteLine("1.) \"What do I do with these?\" 2.) \"Who are you?\" 3.) >Remain silent");
+                            Console.WriteLine("(1/2/3)");
+                            Console.ReadKey();
+                            Console.WriteLine();
+
+                            if (choice.Key == ConsoleKey.D1)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("\"What do you think? You throw them at the enemy!\"");
+                                Console.WriteLine();
+                            }
+                            else if (choice.Key == ConsoleKey.D2)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("\"I'm me. The real question is: who are you?\"");
+                                Console.WriteLine();
+                            }
+                            else if (choice.Key == ConsoleKey.D3)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("\"What are you waiting for? Throw them!\"");
+                                Console.WriteLine();
+
+                            }
+
+
+
                             wrongInput = false; //loop break
 
 
@@ -228,7 +257,6 @@ namespace TextAdventure
                             else if (choice.Key == ConsoleKey.D2)
                                 wrongInput = false;
                         }
-
                         if (choice.Key == ConsoleKey.D1)
                         {
                             Console.WriteLine();
@@ -271,7 +299,7 @@ namespace TextAdventure
                 else if (Console.ForegroundColor == ConsoleColor.DarkRed)
                 {
                     Console.WriteLine("You finished with Very Bad Karma!!");
-                        }
+                }
                 else if (Console.ForegroundColor == ConsoleColor.White)
                 {
                     Console.WriteLine("You finished with Neutral Karma.");
