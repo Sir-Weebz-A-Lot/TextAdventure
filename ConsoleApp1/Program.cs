@@ -85,7 +85,6 @@ namespace TextAdventure
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine();
                         Console.WriteLine(">As you enter the next room you see three men - all of them armed.");
-                        Console.WriteLine();
                         Console.WriteLine("What do you do?  Shoot or don't shoot?");
                         Console.WriteLine("1) Shoot 2) Don't Shoot");
                         choice = Console.ReadKey(); // sets choice to the button pressed (instead of calling choice again)

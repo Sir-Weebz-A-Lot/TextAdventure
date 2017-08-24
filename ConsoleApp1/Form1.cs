@@ -11,23 +11,11 @@ using WMPLib;
 
 namespace TextAdventure
 {
-    public partial class Form1 : Form
-    {
-        WindowsMediaPlayer player = new WindowsMediaPlayer();
 
-        public Form1()
-        {
-            InitializeComponent();
-            player.URL = "gunshot.wav";
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            player.controls.play();
-        }
     }
-    class Write
-    {
+    public partial class Form1 : Form
+    {   
+        
         public void WriteText(string text)
         {
             Console.SetCursorPosition(0, Console.CursorTop);
@@ -116,7 +104,25 @@ namespace TextAdventure
                         {
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
+
                             t.WriteText(">You shot all three of them with the pistol you picked up. You can move on.");
+
+
+                                {
+                            {
+                                WindowsMediaPlayer player = new WindowsMediaPlayer();
+
+                                Form1();
+                                {
+                                    InitializeComponent();
+                                    player.URL = "gunshot.wav";
+                                }
+
+                                 void Form1_Load(object sender, EventArgs e)
+                                {
+                                    player.controls.play();
+                                }
+                            }
                             t.WriteText("\"That was a close one back there, " + name + "\"");
                             t.WriteText(">Dmitri pats you on the back and points to the exit from the building.");
                             t.WriteText(">You walk out the door and see an orange sky, the gunfire is louder than before.");
