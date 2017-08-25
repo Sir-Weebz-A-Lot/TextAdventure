@@ -12,25 +12,23 @@ using WMPLib;
 namespace TextAdventure
 {
 
-    }
+    {
     public partial class Form1 : Form
-    {   
-        
+    {
+
+
         public void WriteText(string text)
-        {
-            Console.SetCursorPosition(0, Console.CursorTop);
-            Console.WriteLine(text);
-            Console.WriteLine("(Press any key to continue...)");
-            Console.WriteLine();
-            Console.ReadKey();
+    {
+        Console.SetCursorPosition(0, Console.CursorTop);
+        Console.WriteLine(text);
+        Console.WriteLine("(Press any key to continue...)");
+        Console.WriteLine();
+        Console.ReadKey();
 
-            Console.WriteLine("This is working");
-
-
-        }
+    }
     }
     class Program
-    {
+    {    
         static void Main(string[] args)
         {
             var t = new Write();
@@ -118,7 +116,7 @@ namespace TextAdventure
                                     player.URL = "gunshot.wav";
                                 }
 
-                                 void Form1_Load(object sender, EventArgs e)
+                                void Form1_Load(object sender, EventArgs e)
                                 {
                                     player.controls.play();
                                 }
@@ -162,7 +160,7 @@ namespace TextAdventure
 
 
 
-                        }
+                        
                         else if (choice.Key == ConsoleKey.D2)
                         {
                             Console.ForegroundColor = ConsoleColor.White;
