@@ -1,29 +1,37 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using WMPLib;
 
 namespace TextAdventure
 {
-    class Write
+
     {
+    public partial class Form1 : Form
+    {
+
+
         public void WriteText(string text)
-        {
-            Console.SetCursorPosition(0, Console.CursorTop);
-            Console.WriteLine(text);
-            Console.WriteLine("(Press any key to continue...)");
-            Console.WriteLine();
-            Console.ReadKey();
+    {
+        Console.SetCursorPosition(0, Console.CursorTop);
+        Console.WriteLine(text);
+        Console.WriteLine("(Press any key to continue...)");
+        Console.WriteLine();
+        Console.ReadKey();
 
-
-        }
+    }
     }
     class Program
-    {
+    {    
         static void Main(string[] args)
         {
-            var t = new Write();         
+            var t = new Write();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Welcome to (unnamed) text adventure!  We hope you enjoy it");
             Console.WriteLine();
@@ -85,17 +93,36 @@ namespace TextAdventure
                         Console.SetCursorPosition(0, Console.CursorTop - 1);
                         Console.WriteLine();
                         Console.WriteLine(">As you enter the next room you see three men - all of them armed.");
+                        Console.WriteLine();
                         Console.WriteLine("What do you do?  Shoot or don't shoot?");
                         Console.WriteLine("1) Shoot 2) Don't Shoot");
                         choice = Console.ReadKey(); // sets choice to the button pressed (instead of calling choice again)
 
                         if (choice.Key == ConsoleKey.D1)
-                        {                           
+                        {
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                             Console.SetCursorPosition(0, Console.CursorTop - 1);
+
                             t.WriteText(">You shot all three of them with the pistol you picked up. You can move on.");
+
+
+                                {
+                            {
+                                WindowsMediaPlayer player = new WindowsMediaPlayer();
+
+                                Form1();
+                                {
+                                    InitializeComponent();
+                                    player.URL = "gunshot.wav";
+                                }
+
+                                void Form1_Load(object sender, EventArgs e)
+                                {
+                                    player.controls.play();
+                                }
+                            }
                             t.WriteText("\"That was a close one back there, " + name + "\"");
-                            t.WriteText(">Dmitri pats you on the back and points to the exit from the building.");                            
+                            t.WriteText(">Dmitri pats you on the back and points to the exit from the building.");
                             t.WriteText(">You walk out the door and see an orange sky, the gunfire is louder than before.");
                             t.WriteText("\"Get over here!\"  Take cover from them before they blow you to bits!' - says a man wearing a fur cap.");
                             t.WriteText("\"What are you doing, kid? You could have gotten yourself killed out there.\"");
@@ -130,10 +157,10 @@ namespace TextAdventure
 
 
 
-                            
 
 
-                        }
+
+                        
                         else if (choice.Key == ConsoleKey.D2)
                         {
                             Console.ForegroundColor = ConsoleColor.White;
@@ -150,7 +177,7 @@ namespace TextAdventure
                     else if (choice.Key == ConsoleKey.D2)
                     {
                         Console.SetCursorPosition(0, Console.CursorTop);
-                        Console.ForegroundColor = ConsoleColor.Blue;                       
+                        Console.ForegroundColor = ConsoleColor.Blue;
                         t.WriteText(">You leave the pistol and rush to the door, hoping you don't need it.");
                         Console.WriteLine();
                         t.WriteText(">As you enter the next room you see three men - all of them armed.");
@@ -162,8 +189,8 @@ namespace TextAdventure
                         {
                             Console.WriteLine("1) \"I thought I wouldn't need it.\"\n 2) \"Where are we?\"");
                             Console.SetCursorPosition(0, Console.CursorTop - 2);
-                                choice = Console.ReadKey();
-                                if (choice.Key == ConsoleKey.D1)
+                            choice = Console.ReadKey();
+                            if (choice.Key == ConsoleKey.D1)
                                 wrongInput = false;
                             else if (choice.Key == ConsoleKey.D2)
                                 wrongInput = false;
@@ -181,15 +208,15 @@ namespace TextAdventure
                         }
                         else if (choice.Key == ConsoleKey.D2)
                         {
-                            
+
                             Console.WriteLine();
                             t.WriteText("I'll explain everything soon.");
                             wrongInput = false; //loop break
                         }
                     }
                 }
-                
-                
+
+
                 if (Console.ForegroundColor == ConsoleColor.Blue)
                 {
                     Console.WriteLine("You finished with Good Karma!");
